@@ -1,0 +1,75 @@
+@import "variables";
+
+html, body {
+    
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    background-color: @color-dark; // variables p.1.1
+    font-family: @font-family-primary;
+    
+}
+
+body {
+
+    -ms-overflow-style: scrollbar;
+
+    &.lock {
+
+        overflow: hidden;
+    }
+}
+
+main {
+
+    width: 100%;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+   
+    @media (min-width: 576px) {
+
+        max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+
+        max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+
+        max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+
+        max-width: 1140px;
+    }
+}
+

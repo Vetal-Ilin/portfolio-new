@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Russo+One&display=swap');
+
+@import "variables";
+
+h1 {
+
+    // variables p.2.2. 
+    font-family:  @font-famoly-secondary;
+    // variables p.3.1
+    font-size:  @font-size-h1; // 19
+
+    @media (min-width: 768px) {
+
+        font-size: @font-size-h1 + 17; // 
+    }
+
+    @media (min-width: 992px) {
+
+        font-size: @font-size-h1 + 23; // 
+    }
+
+    @media (min-width: 1200px) {
+
+        font-size: @font-size-h1 + 27; //
+    }
+}
+
+h2 {
+
+    font-size:  @font-size-h2; // 17
+
+    @media (min-width: 768px) {
+
+        font-size: @font-size-h2 + 3; //
+    }
+
+    @media (min-width: 992px) {
+
+        font-size: @font-size-h2 + 5; //
+    }
+
+    @media (min-width: 1200px) {
+
+        font-size: @font-size-h2 + 7; //
+    }
+}
+
+
+
+p {
+
+    font-size:  @font-size-p; // 14px
+
+    @media (min-width: 768px) {
+
+        font-size: @font-size-p + 2; // 
+    }
+
+    @media (min-width: 992px) {
+
+        font-size: @font-size-p + 4; //
+    }
+
+    @media (min-width: 1200px) {
+
+        font-size: @font-size-p + 6; //
+    }
+}

@@ -1,0 +1,74 @@
+@import "normalize";
+@import "page";
+@import "font";
+@import "variables";
+@import "mixin";
+@import "media";
+
+// основная кнопка button
+ // elements p.1.1.
+button.button-primery,
+input.button-primery {
+
+    position: relative;
+    background-color: transparent; //@color-accent; // variables p.1.3
+    color: @color-light; // variables p 1.2
+    border: 0;
+    width: 135px;
+    padding: 10px 10px;
+    border: 2px solid @color-light; // variables p 1.2
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s, background-color 0s;
+   
+
+    &:disabled {
+
+        color: @background-color-input-disabled; // variables 1.13.
+        border: 2px solid @background-color-input-disabled;  // variables 1.13.
+
+        &:active {
+
+            background-color: transparent;
+        }
+
+        &:hover {
+
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;   
+        }
+    }
+
+
+    &:active {
+
+        background-color: @border-accent-opacity; // variables p.1.8.        
+    }
+
+   
+
+    @media screen and (min-width: 992px) {
+        
+
+        width: 150px;
+    }
+
+    &:focus {
+
+        .focus(); // mixin p.1.1 
+    }
+
+    &:hover {
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;   
+    }
+} // end button.button-primery
+
