@@ -9,6 +9,8 @@
 
 /*  header-major ================================= */
 
+.grecaptcha-badge {visibility: hidden;}
+
 #header-major {
 
     display: block;
@@ -17,7 +19,7 @@
     left: 0;
     width: 100vw;
     z-index: 100000000000;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; 
 
     &.open-nav {
 
@@ -632,6 +634,7 @@
     
     width: 100%;
     margin: 0;
+    height: 450px;
     padding: 90px 0 0 0;
     background-color: @color-dark; // variables p. 1.1
 
@@ -736,10 +739,11 @@
 #feedback {
 
     width: 100%;
-    height: 390px;
+    height: auto;
+    min-height: 300px;
     position: relative;
     margin: 0;
-    padding: 90px 0 0 0; 
+    padding: 90px 0  0; 
     background-color: @color-dark; // variables p. 1.1 
 
     .container > h1 {
@@ -780,6 +784,27 @@
             }
         }
 
+        .recaptcha-conditionality-policy {
+
+            width: 100%;
+            height: auto;
+            color: @color-light; // variables p 1.2
+            text-align: center;
+            margin: 5px 0;
+
+            & > p {
+
+                width:100%;
+                text-align: center;
+            }
+    
+            & > a {
+
+                width: auto;
+                color: @color-light; // variables p 1.2
+            }  
+        }
+
         // elements p.1.1.
         input[name="submit"] {
 
@@ -790,18 +815,12 @@
 
            left: 100%;
         }
-
-        .g-recaptcha {
-
-            margin: 0 auto;
-            transform: scale(0.95); 
-        }
     }
 
     .feedback__popup-error {
 
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: -100%;
         transform: translateY(50%);
         width: 100%;
@@ -847,7 +866,7 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 100px 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
     overflow: hidden;
 
     .footer-contact {

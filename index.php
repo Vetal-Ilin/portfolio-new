@@ -490,9 +490,14 @@ require('recaptcha.php');
 
           <form action="/" method="POST" id="feedback-form">
             <textarea  id="comment" rows='10' name="message" placeholder="Буду очень благодарен если вы укажите недочеты в моем портфолио." required></textarea>
-            <input  type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+            <input  type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" >
+            <div class="recaptcha-conditionality-policy"> 
+              Вся информация данного сайта защищена с помощью reCAPTCHA и Google.
+              Применяются</p><a href="https://policies.google.com/privacy">Политика конфиденциальности</a> и 
+              <a href="https://policies.google.com/terms">Условия предоставления услуг.</a>
+            </div>
             <input class="button-primery" id="feedback-input" type="submit" name="submit" value="Отправить">  
-          </form><?php  } else {
+          </form> <?php  } else {
             
             //показываем форму
             $message = $_POST['message'];
@@ -503,10 +508,10 @@ require('recaptcha.php');
             
             if (mail("vetaly-Ilin@yandex.ru", "Cообщение с сайта", "В форме написан комментарий: ".$message , "From: info@портфолио-ильин.рф \r\n")){
               echo("<script>console.log('Сообщение удачно отправлено!');</script>");
-              echo "<h2 style='color: white; position: absolute; width: 100%; top: 50%; left: 0; transform: translateY(-50%); text-align: center;'>сообщение отправлено</h2>";
+              echo "<h2 style='color: white; position: absolute; width: 100%; top: 50%; left: 0; transform: translateY(-50%); text-align: center; padding: 20px 0'>сообщение отправлено</h2>";
             
             } else {
-              echo("<script>console.log('Произошла ошибка сообщение не отправлено!');</script>");
+              echo("<script>console.log('Произошла ошибка. Cообщение не отправлено!');</script>");
             }
           }
           ?>
