@@ -25,11 +25,11 @@ require('recaptcha.php');
       <header id="header-major">
 
         <nav class="header-major__nav">
-          <a href="#about-me"  class="header-major__nav__link" tabindex="-1"><h2>Обо мне</h2></a>
-          <a href="#skills"  class="header-major__nav__link" tabindex="-1"><h2>Навыки</h2></a>
-          <a href="#education"  class="header-major__nav__link" tabindex="-1"><h2>Образование</h2></a>
-          <a href="#work"  class="header-major__nav__link" tabindex="-1"><h2>Место работы</h2></a>
-          <a href="#feedback"  class="header-major__nav__link" tabindex="-1"><h2>Обратная связь</h2></a>
+          <a href="#about-me"  class="header-major__nav__link"><h2>Обо мне</h2></a>
+          <a href="#skills"  class="header-major__nav__link"><h2>Навыки</h2></a>
+          <a href="#education"  class="header-major__nav__link"><h2>Образование</h2></a>
+          <a href="#work"  class="header-major__nav__link"><h2>Место работы</h2></a>
+          <a href="#feedback"  class="header-major__nav__link"><h2>Обратная связь</h2></a>
         </nav>
 
         <div class="header-major__border-burger"><div class="header-major__border-burger__icon"><span class="header-major__border-burger__icon__span"></span></div></div>
@@ -61,7 +61,8 @@ require('recaptcha.php');
         </div><!-- end Контент  main-header -->
 
         <!-- стрелка скролла вниз -->
-        <a href="#about-me"  class="arrow-down-section-header"><img src="build/img/header-major__icon-arrow.svg" alt="вниз"></a>
+        <a href="#about-me"  class="section-header__arrow-down"><img src="build/img/header-major__icon-arrow.svg" alt="вниз"></a>
+ 
       
       </section>
       
@@ -285,7 +286,7 @@ require('recaptcha.php');
 
           </div>  <!-- END Swiper библиотека-->
 
-          <!-- Список навыков (применить php код - чатсь кода удалить)  -->
+          <!-- Список навыков -->
           <ul class="skills__wrapper__list"> 
             <li class="skills__wrapper__list__item">
       
@@ -387,7 +388,7 @@ require('recaptcha.php');
             </div>
             <div class="work__list__item-left__popup-left">
               <div class="work__list__item-left__popup-left__wrapper-button">
-                <button id="work__list__item-left__popup-left__wrapper-button-left"  class="button-primery" tabindex="-1">Закрыть</button>
+                <button id="work__list__item-left__popup-left__wrapper-button-left"  class="button-primery" tabindex="-1">Закрыть (esc)</button>
               </div>
               <div class="work__list__item-left__popup-left__wrapper-content">
                 <h2>Инженер</h2>
@@ -410,9 +411,9 @@ require('recaptcha.php');
                 </p>
               </div>
             </div>
-          </li> <!-- end desktop -->
+          </li> 
 
-          <!-- desktop -->
+         
           <li class="work__list__item-right">
             <img src="build/img/work-icon-surveyor.svg" alt="icon-surveyor">
             <div class="work__list__item-right__wrapper-content-right">
@@ -421,7 +422,7 @@ require('recaptcha.php');
             </div>
             <div class="work__list__item-right__popup-right"> 
               <div class="work__list__item-right__popup-right__wrapper-button">
-                <button id="work__list__item-right__popup-right__wrapper-button-right"  class="button-primery" tabindex="-1">Закрыть</button>
+                <button id="work__list__item-right__popup-right__wrapper-button-right"  class="button-primery" tabindex="-1">Закрыть (esc)</button>
               </div>
               <div class="work__list__item-right__popup-right__wrapper-content">
                 <h2>Геодезист</h2>
@@ -463,7 +464,7 @@ require('recaptcha.php');
                 <img src="build/img/work-icon-surveyor.svg" alt="icon-surveyor">
                 <p>Геодезист</p>
               </div>
-            </li> <!--  smartphone -->
+            </li> <!-- end  smartphone -->
   
             <li class="work__list__center__item">
               <h2>Опыт работы</h2>
@@ -529,21 +530,21 @@ require('recaptcha.php');
   
 
       <footer>
-        <div class="footer-contact">
+        <div class="footer-contact" tabindex="0">
           <div class="footer-contact__wrapper-icon"></div>
           <div class="footer-contact__number"> 
             <a href="tel:+7(912)319-63-71"><p>+7(912)319-63-71</p></a>
           </div>
         </div>
         
-        <div class="footer-vk">
+        <div class="footer-vk" tabindex="0">
           <div class="footer-vk__wrapper-icon"></div>
           <div class="footer-vk__link">
             <a href="https://vk.com/v.ilin94"><p>v.ilin94</p></a>
           </div>
         </div>
 
-        <div class="footer-github">
+        <div class="footer-github" tabindex="0">
           <div class="footer-github__wrapper-icon"></div>
           <div class="footer-github__link">
             <a href="https://github.com/Vetal-Ilin/portfolio-new.git"><p>portfolio.git</p></a>
@@ -555,6 +556,7 @@ require('recaptcha.php');
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="swiper.min.js"></script>
+    <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
     <script src="build/js/script.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY ?>"></script>
     <script>

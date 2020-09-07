@@ -38,7 +38,13 @@ const styleFiles = [
 
 //Порядок подключения js файлов
 const scriptFiles = [
-  './src/js/main.js'
+  './src/js/navigation.js',
+  './src/js/scroll.js',
+  './src/js/skills.js',
+  './src/js/work.js',
+  './src/js/form.js',
+  './src/js/footer.js',
+  './src/js/focus.js'
 ]
 
 
@@ -88,7 +94,7 @@ const scripts = () => {
   }))
   //Выходная папка для скриптов
   .pipe(gulp.dest('./build/js'))
-   .pipe(browserSync.stream());
+  .pipe(browserSync.stream());
 }
 
 exports.scripts = scripts;
@@ -115,7 +121,10 @@ exports.imgmin = imgmin;
 const watch = () => {
   browserSync.init({
         server: {
-            baseDir: "./"
+          baseDir: "./",
+          routes: {
+            '/node_modules': 'node_modules'
+          }
         }
     });
     gulp.watch('./src/img/**', gulp.series('imgmin'))
