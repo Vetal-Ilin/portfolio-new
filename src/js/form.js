@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     /* script для запрета отправки пустого сообщения
     и для вывода сообщений об успешной отправки сообщения */
-    $('input[name="submit"]').click(function() {
+    $('#feedback-input').click(function() {
 
         if($('#comment').val() != 0) {
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
             $('.feedback__wrapper-text').addClass('active'); 
         } else {
 
-            $('.feedback__popup-error').addClass('active');
+           
 
             setTimeout(function() { 
                 $('.feedback__popup-error').addClass('active').removeClass('active');

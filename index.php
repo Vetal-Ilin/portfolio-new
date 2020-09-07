@@ -556,7 +556,7 @@ require('recaptcha.php');
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="swiper.min.js"></script>
-    <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
+    <script src="focus-visible.min.js"></script>
     <script src="build/js/script.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=<?php echo SITE_KEY ?>"></script>
     <script>
