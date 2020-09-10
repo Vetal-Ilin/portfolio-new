@@ -616,13 +616,26 @@
 
                 & > h2 {
 
+                    text-align: left;
+                }
+
+                & > h2:nth-child(1) {
+
                     width: 50%;
                     margin: -2px 0 0 -12px;
                 }
 
+                & > p {
+
+                    text-align: left;
+                }
+
                 & > img {
 
-                    right: 30px;
+                    display: block;
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
                     width: 25px;
                     height: 25px;
                 }
@@ -649,13 +662,8 @@
             
             &__item {
 
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-                position: relative;
                 width: 50%;
-                height: 230px;
+                height: 350px;
                 margin: 0 20px 0 0;
                 
                 &:last-child {
@@ -669,22 +677,11 @@
                     margin: 0;
                 }
 
-                & > h2 {
-
-                    width: 50%; 
-                }             
-
-                & > p {
-                    
-                    padding: 20px 20px 40px 20px;
-                }
-
-                & > span {
+                & > h2:nth-child(6) {
 
                     position: absolute;
                     bottom: 20px;
-                    left: 20px;
-                    padding: 0;
+                    left: 0;
                 }
 
                 & > img {
