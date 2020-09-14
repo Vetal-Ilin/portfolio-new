@@ -42,7 +42,7 @@ require('recaptcha.php');
 
         <!-- Фон main-header -->
         <div class="section-header__filter"></div>
-        <video preload="auto" loop autoplay muted poster playsinline>
+        <video preload="auto" loop autoplay muted playsinline>
           <source src="video.mp4" type="video/mp4">
           <source src="video.webm" type="video/webm">
           <source src="video.ogv" type="video/ogv">
@@ -51,7 +51,7 @@ require('recaptcha.php');
         <!-- Контент  main-header -->
         <div class="section-header__wrapper-content">
           <figure class="section-header__wrapper-content__photo">
-            <img src="build/img/header-major__my-photo.png" alt="Мое фото" width="100px" height="100px">
+            <img src="build/img/header-major__my-photo.png" alt="Мое фото">
             <figcaption class="section-header__wrapper-content__photo__description"><h1>Ильин<br>Виталий<br>Александрович</h1></figcaption>
           </figure>
           <div class="section-header__wrapper-content__title">
@@ -130,7 +130,7 @@ require('recaptcha.php');
               <!-- Слайды -->
               <div class="swiper-slide"> 
                 <h2>HTML 5</h2>
-                <img src="build/img/skills__swiper-slide-background-image-HTML5.svg">
+                <img src="build/img/skills__swiper-slide-background-image-HTML5.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Значение тегов HTML 5 <br> и применение их на практике</p>
@@ -139,7 +139,7 @@ require('recaptcha.php');
 
               <div class="swiper-slide"> 
                 <h2>CSS 3</h2>
-                <img src="build/img/skills__swiper-slide-background-image-CSS3.svg">
+                <img src="build/img/skills__swiper-slide-background-image-CSS3.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Кроссбраузерная верстка</p>
@@ -152,7 +152,7 @@ require('recaptcha.php');
 
               <div class="swiper-slide"> 
                 <h2>javaScript</h2>
-                <img src="build/img/skills__swiper-slide-background-image-JS.svg">
+                <img src="build/img/skills__swiper-slide-background-image-JS.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Переменные</p>
@@ -181,7 +181,7 @@ require('recaptcha.php');
 
               <div class="swiper-slide"> 
                 <h2>jQuery</h2>
-                <img src="build/img/skills__swiper-slide-background-image-jquery.svg">
+                <img src="build/img/skills__swiper-slide-background-image-jquery.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Знание методов jQuery <br> и применение их на практике</p>
@@ -190,7 +190,7 @@ require('recaptcha.php');
 
               <div class="swiper-slide"> 
                 <h2>less</h2>
-                <img src="build/img/skills__swiper-slide-background-image-less.svg">
+                <img src="build/img/skills__swiper-slide-background-image-less.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Переменные</p>
@@ -207,7 +207,7 @@ require('recaptcha.php');
 
               <div class="swiper-slide"> 
                 <h2>Gulp</h2>
-                <img src="build/img/skills__swiper-slide-background-image-gulp.svg">
+                <img src="build/img/skills__swiper-slide-background-image-gulp.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Конкантинация файлов</p>
@@ -248,7 +248,7 @@ require('recaptcha.php');
               
               <div class="swiper-slide"> 
                 <h2>GIT</h2>
-                <img src="build/img/skills__swiper-slide-background-image-git.svg">
+                <img src="build/img/skills__swiper-slide-background-image-git.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Работа с командами: <br> git status; git add; git push; git commit; git pull</p>
@@ -261,7 +261,7 @@ require('recaptcha.php');
 
               <div class="swiper-slide"> 
                 <h2>GitHub</h2>
-                <img src="build/img/skills__swiper-slide-background-image-github.svg">
+                <img src="build/img/skills__swiper-slide-background-image-github.svg" alt="Фоновое изображение">
                 <div class="swiper-slide__text-wrapper">
                   <img src="build/img/swiper-slide-item-icon.svg" alt="checkbox">
                   <p>Создание репозитория</p>
@@ -448,18 +448,18 @@ require('recaptcha.php');
             </div>
           </li>  <!-- end desktop -->
 
-          <ul class="work__list__center">
+          <li class="work__list__center">
           
-            <li class="work__list__center__item">
+            <div class="work__list__center__item">
               <h2>Организация</h2>
               <p>
                 АО “Магнитогорский ГИПРОМЕЗ” (Государственный Институт по 
                 Проектированию Металлургических Заводов)
               </p>
-            </li>
+            </div>
   
             <!-- smartphone -->
-            <li class="work__list__center__item">
+            <div class="work__list__center__item">
               <h2>Должность</h2>
               <div class="work__list__center__item__wrapper-content">
                 <img src="build/img/work-icon-engineer.svg" alt="icon-engineer">
@@ -469,14 +469,14 @@ require('recaptcha.php');
                 <img src="build/img/work-icon-surveyor.svg" alt="icon-surveyor">
                 <p>Геодезист</p>
               </div>
-            </li> <!-- end  smartphone -->
+            </div> <!-- end  smartphone -->
   
-            <li class="work__list__center__item">
+            <div class="work__list__center__item">
               <h2>Опыт работы</h2>
               <p>4 года. С августа 2016 года <br> - по настоящее время.</p>
-            </li>
+            </div>>
   
-          </ul>
+          </li>
 
         </ul> <!-- end  work__list  -->
       </section>
@@ -499,7 +499,7 @@ require('recaptcha.php');
             <input  type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" >
             <div class="recaptcha-conditionality-policy"> 
               Вся информация данного сайта защищена с помощью reCAPTCHA и Google.
-              Применяются</p><a href="https://policies.google.com/privacy">Политика конфиденциальности</a> и 
+              Применяются<a href="https://policies.google.com/privacy"> Политика конфиденциальности</a> и 
               <a href="https://policies.google.com/terms">Условия предоставления услуг.</a>
             </div>
             <input class="button-primery" id="feedback-input" type="submit" name="submit" value="Отправить">  
